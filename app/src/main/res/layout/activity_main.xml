@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/selectLayout"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:background="@color/opacity_50"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/id_prev"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:text="@string/arrow_left"
+                        android:textAlignment="center"
+                        android:background="@color/opacity_0"/>
+
+                    <EditText
+                        android:id="@+id/id"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zero"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:backgroundTint="@color/white"/>
+
+                    <Button
+                        android:id="@+id/id_next"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:text="@string/arrow_right"
+                        android:background="@color/opacity_0"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_weight="1"
+                        android:id="@+id/radio_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:id="@+id/radio_type_1"
+                            android:checked="true"
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/radio_top_selector"
+                            android:text="@string/radio_type_text_1"
+                            android:textColor="@drawable/radio_text_selector"
+                            android:gravity="center"
+                            android:button="@null"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_type_2"
+                            android:checked="false"
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/radio_center_selector"
+                            android:text="@string/radio_type_text_2"
+                            android:textColor="@drawable/radio_text_selector"
+                            android:gravity="center"
+                            android:button="@null"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_type_3"
+                            android:checked="false"
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/radio_bottom_selector"
+                            android:text="@string/radio_type_text_3"
+                            android:textColor="@drawable/radio_text_selector"
+                            android:gravity="center"
+                            android:button="@null"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:layout_weight="1"
+                        android:id="@+id/radio_position"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:id="@+id/radio_position_1"
+                            android:checked="true"
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/radio_top_selector"
+                            android:text="@string/radio_position_text_1"
+                            android:textColor="@drawable/radio_text_selector"
+                            android:gravity="center"
+                            android:button="@null"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_position_2"
+                            android:checked="false"
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/radio_center_selector"
+                            android:text="@string/radio_position_text_2"
+                            android:textColor="@drawable/radio_text_selector"
+                            android:gravity="center"
+                            android:button="@null"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_position_3"
+                            android:checked="false"
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/radio_center_selector"
+                            android:text="@string/radio_position_text_3"
+                            android:textColor="@drawable/radio_text_selector"
+                            android:gravity="center"
+                            android:button="@null"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_position_4"
+                            android:checked="false"
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/radio_bottom_selector"
+                            android:text="@string/radio_position_text_4"
+                            android:textColor="@drawable/radio_text_selector"
+                            android:gravity="center"
+                            android:button="@null"/>
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:layout_weight="1"
+                        android:id="@+id/radio_strength"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:id="@+id/radio_strength_1"
+                            android:checked="true"
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/radio_top_selector"
+                            android:text="@string/radio_strength_text_1"
+                            android:textColor="@drawable/radio_text_selector"
+                            android:gravity="center"
+                            android:button="@null"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_strength_2"
+                            android:checked="false"
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/radio_center_selector"
+                            android:text="@string/radio_strength_text_2"
+                            android:textColor="@drawable/radio_text_selector"
+                            android:gravity="center"
+                            android:button="@null"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_strength_3"
+                            android:checked="false"
+                            android:layout_weight="1"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/radio_bottom_selector"
+                            android:text="@string/radio_strength_text_3"
+                            android:textColor="@drawable/radio_text_selector"
+                            android:gravity="center"
+                            android:button="@null"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/black">
+
+                <ImageView
+                    android:id="@+id/openLayout"
+                    android:padding="20dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/arrow"/>
+
+                <ImageView
+                    android:id="@+id/imageViewPhoto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/radius_button"/>
+
+                <ImageView
+                    android:id="@+id/camChange"
+                    android:padding="15dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/change"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutShutter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

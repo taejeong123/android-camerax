@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SKT_skinData</string>
+    <string name="radio_type_text_1">백색광</string>
+    <string name="radio_type_text_2">주광색광</string>
+    <string name="radio_type_text_3">할로겐</string>
+    <string name="radio_position_text_1">정면</string>
+    <string name="radio_position_text_2">좌측</string>
+    <string name="radio_position_text_3">우측</string>
+    <string name="radio_position_text_4">위쪽</string>
+    <string name="radio_strength_text_1">약</string>
+    <string name="radio_strength_text_2">중</string>
+    <string name="radio_strength_text_3">강</string>
+    <string name="arrow_left"><![CDATA[<]]></string>
+    <string name="arrow_right"><![CDATA[>]]></string>
+    <string name="zero">0</string>
+</resources>
